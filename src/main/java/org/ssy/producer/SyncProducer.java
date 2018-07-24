@@ -1,4 +1,4 @@
-package org.ssy.learn.producer;
+package org.ssy.producer;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
