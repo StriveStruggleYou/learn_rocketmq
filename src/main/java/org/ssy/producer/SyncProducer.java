@@ -14,7 +14,7 @@ public class SyncProducer {
   public static void main(String[] args) throws Exception {
     //Instantiate with a org.ssy.producer group name.
     DefaultMQProducer producer = new
-        DefaultMQProducer("please_rename_unique_group_name");
+        DefaultMQProducer("test_group");
 
     producer.setNamesrvAddr("127.0.0.1:9876");
 
@@ -27,6 +27,12 @@ public class SyncProducer {
           ("Hello RocketMQ " +
               i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
       );
+
+      try {
+        Thread.sleep(200);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
       //Call send message to deliver message to one of brokers.
       SendResult sendResult = producer.send(msg);
       System.out.printf("%s%n", sendResult);
