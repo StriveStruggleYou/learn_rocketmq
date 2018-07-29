@@ -24,7 +24,7 @@ import org.apache.rocketmq.common.message.Message;
 
 
 /**
- * 测试batch
+ * 批量接受和批量发送数据信息
  */
 public class SimpleBatchProducer {
 
