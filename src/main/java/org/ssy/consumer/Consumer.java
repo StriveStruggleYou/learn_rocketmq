@@ -48,7 +48,7 @@ public class Consumer {
       public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs,
           ConsumeConcurrentlyContext context) {
 //
-////        System.out.printf(integer.addAndGet(1) + "%s Receive New Messages: %s %n",
+//        System.out.printf(integer.addAndGet(1) + "%s Receive New Messages: %s %n",
 //            Thread.currentThread().getName(),
 //            msgs + " size:" + msgs.size());
 
